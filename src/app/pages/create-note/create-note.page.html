@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create Note</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">Title</ion-label>
+    <ion-input [(ngModel)]="note.title"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Details</ion-label>
+    <ion-textarea [(ngModel)]="note.details" rows="8"></ion-textarea>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-buttons>
+      <ion-button (click)="addNote()" color="secondary">Add Note</ion-button>
+    </ion-buttons>
+
+  </ion-item>
+
+
+</ion-content>
